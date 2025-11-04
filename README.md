@@ -92,7 +92,7 @@ Follow the prompts to:
 
 ## Disclaimer
 
-These scripts are provided "as is", without warranty of any kind. Use at your own risk. The authors take no responsibility for any issues or damages that may arise from using these tools.
+These scripts are provided "as is", without warranty of any kind. Use at your own risk. The author take no responsibility for any issues or damages that may arise from using these tools.
 
 ## Contributing
 
